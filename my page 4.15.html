@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number bombing</title>
+  <link rel="stylesheet" href="CSSstyle.css">
+</head>
+
+<body>
+  <script>
+
+  </script>
+
+  <h1> Number bombing!
+    <p>[from 1 to 100]</p></h1>
+  <h3></h3>
+  <h3>Hey,welcome to our game~</h3>
+  <h3>When you open this page, I already have a lucky number for you in my mind.</h3>
+  <h3>Please guess the number with your fabulous brain.</h3>
+  <h3>And then try not to make the lucky number bomb you!</h3>
+  <h3>Wish you lucky~</h3>
+  <img id='img1' src="bomb minder.png" width="100" height="100";></img>
+  <img id='img2' src="bomb minder.png" width="100" height="100";></img>
+  <img id='img3' src="bomb minder.png" width="100" height="100";></img>
+
+  <button id="bt1" type="button" onclick="A()">I already know the lucky number!</button>
+  <button id="bt2" type="button" onclick="G()">Guessing now</button>
+  <img id='img4' src="firework.jpeg" width="1200" height="1000" style="display:none";></img>
+
+  <script>
+  function enterName(){
+    var name = prompt("May I ask your name?");
+    alert("Let's enjoy the game together " + name + "!");
+  }
+  enterName()
+
+  var Lucky = Math.floor(Math.random() * 100) + 1;
+
+  var max = 100;
+  var min = 1;
+
+  function G(){
+    var answer = prompt("Let's start guessing!!!");
+        if (answer == Lucky){
+        document.getElementById('img1').style.display="none";
+        document.getElementById('img2').style.display="none";
+        document.getElementById('img3').style.display="none";
+        document.getElementById('img4').style.display="block";
+        alert('Surprise!' + name + '! You luckydog!');
+       }else {
+        if (answer < 101 && answer > 0){
+          if (answer<Lucky) {
+            if (min < answer) {
+              min = answer;
+            }
+
+            alert('The number is between ' + min + ' and ' + max );
+          }else {
+            if (max > answer) {
+              max = answer;
+            }
+
+            alert('The number is between ' + min + ' and ' + max );
+          }
+        }else {
+          alert('Sorry, the number you put is out of range >_<');
+        }
+
+      }
+  };
+
+
+  function A(){
+    var answer = prompt("Let's put your answer here~");
+    if  (answer == Lucky){
+
+    document.getElementById('img1').style.display="none";
+    document.getElementById('img2').style.display="none";
+    document.getElementById('img3').style.display="none";
+    document.getElementById('img4').style.display="block";
+    alert('Good job!' + name + '! You clever angle!');
+    }
+    else {
+      alert("Sorry, your answer is wrong, just go back and try it again!~");
+    }
+  };
+  </script>
+
+</body>
+</html>
