@@ -6,9 +6,6 @@
 </head>
 
 <body>
-  <script>
-
-  </script>
 
   <h1> Number bombing!
     <p>[from 1 to 100]</p></h1>
@@ -34,6 +31,8 @@
   enterName()
 
   var Lucky = Math.floor(Math.random() * 100) + 1;
+  var max = 100;
+  var min = 1;
 
   function G(){
     var answer = prompt("Let's start guessing!!!");
@@ -44,11 +43,24 @@
         document.getElementById('img4').style.display="block";
         alert('Surprise!' + name + '! You luckydog!');
        }else {
-        if (answer<Lucky) {
-          alert('The number is between ' + answer + ' and 100');
+        if (answer < 101 && answer > 0){
+          if (answer<Lucky) {
+            if (min < answer) {
+              min = answer;
+            }
+
+            alert('The number is between ' + min + ' and ' + max );
+          }else {
+            if (max > answer) {
+              max = answer;
+            }
+
+            alert('The number is between ' + min + ' and ' + max );
+          }
         }else {
-          alert('The number is between 1 and ' + answer + '');
+          alert('Sorry, the number you put is out of range >_<');
         }
+
       }
   };
 
