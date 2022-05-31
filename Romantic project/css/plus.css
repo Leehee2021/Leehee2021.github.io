@@ -1,0 +1,65 @@
+.mbr-section-title {
+  color: #fa8ef5 ;
+  text-shadow: 2px 2px #545964;
+  padding-bottom: 2rem;
+}
+
+/*
+.X-two {
+  margin: 0px 0 30px 0;
+  background-color: rgb(184, 148, 219);
+}
+*/
+
+.X-two .mbr-section-head {
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+}
+
+
+.X-Presents {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+
+.X-Ceremony {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  background-color: rgb(184, 148, 219);
+}
+.X-Ceremony .row {
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .X-Ceremony .row {
+    flex-direction: column-reverse;
+  }
+  .X-Ceremony .image-wrapper {
+    margin-bottom: 2rem;
+  }
+  .X-Ceremony .card-wrapper {
+    padding: 0 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .X-Ceremony .card-wrapper {
+    padding-right: 2rem;
+  }
+}
+.X-Ceremony .image-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+.X-Ceremony .mbr-text,
+.X-Ceremony .mbr-section-btn {
+  color: #ffffff;
+}
+.X-Ceremony .card-title {
+  color: #fa8ef5 ;
+  text-shadow: 2px 2px #545964
+}
+/*
+rgb(255,223,246)
+#379683;
+*/
