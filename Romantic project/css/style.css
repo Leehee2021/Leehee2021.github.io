@@ -78,6 +78,8 @@ body {
     line-height: calc( 1.4 * (1.07rem + (1.2 - 1.07) * ((100vw - 20rem) / (48 - 20))));
   }
 }
+
+
 /* Buttons */
 .btn {
   padding: 0.6rem 1.2rem;
@@ -110,10 +112,11 @@ body {
 .bg-danger {
   background-color: #ff9966 !important;
 }
+
 .btn-primary,
 .btn-primary:active {
-  background-color: #6592e6 !important;
-  border-color: #6592e6 !important;
+  background-color: #ac69df !important;
+  border-color: #ac69df !important;
   color: #ffffff !important;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
@@ -122,8 +125,8 @@ body {
 .btn-primary.focus,
 .btn-primary.active {
   color: #ffffff !important;
-  background-color: #2260d2 !important;
-  border-color: #2260d2 !important;
+  background-color: #9241d6 !important;
+  border-color: #9241d6 !important;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 .btn-primary.disabled,
@@ -132,10 +135,18 @@ body {
   background-color: #2260d2 !important;
   border-color: #2260d2 !important;
 }
+
+/*
+6592e6
+2260d2
+
+ff0f0f
+ff83ff
+*/
 .btn-secondary,
 .btn-secondary:active {
-  background-color: #ff6666 !important;
-  border-color: #ff6666 !important;
+  background-color: #e378de !important;
+  border-color: #e378de !important;
   color: #ffffff !important;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
@@ -144,20 +155,21 @@ body {
 .btn-secondary.focus,
 .btn-secondary.active {
   color: #ffffff !important;
-  background-color: #ff0f0f !important;
-  border-color: #ff0f0f !important;
+  background-color: #ff5aff !important;
+  border-color: #ff5aff !important;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 .btn-secondary.disabled,
 .btn-secondary:disabled {
   color: #ffffff !important;
-  background-color: #ff0f0f !important;
-  border-color: #ff0f0f !important;
+  background-color: #ff5aff !important;
+  border-color: #ff5aff !important;
 }
+
 .btn-info,
 .btn-info:active {
-  background-color: #47b5ed !important;
-  border-color: #47b5ed !important;
+  background-color: #ff5aff !important;
+  border-color: #ff5aff !important;
   color: #ffffff !important;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
@@ -166,8 +178,8 @@ body {
 .btn-info.focus,
 .btn-info.active {
   color: #ffffff !important;
-  background-color: #148cca !important;
-  border-color: #148cca !important;
+  background-color: #ff00ff !important;
+  border-color: #ff00ff !important;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 .btn-info.disabled,
@@ -176,10 +188,11 @@ body {
   background-color: #148cca !important;
   border-color: #148cca !important;
 }
+
 .btn-success,
 .btn-success:active {
-  background-color: #40b0bf !important;
-  border-color: #40b0bf !important;
+  background-color: #b16cf0 !important;
+  border-color: #b16cf0 !important;
   color: #ffffff !important;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
@@ -188,8 +201,8 @@ body {
 .btn-success.focus,
 .btn-success.active {
   color: #ffffff !important;
-  background-color: #2a747e !important;
-  border-color: #2a747e !important;
+  background-color: #9844eb !important;
+  border-color: #9844eb !important;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 .btn-success.disabled,
@@ -581,6 +594,7 @@ a:hover {
 .mbr-plan-header.bg-danger .mbr-plan-price-desc {
   color: #ffffff;
 }
+
 /* Scroll to top button*/
 .scrollToTop_wraper {
   display: none;
@@ -611,6 +625,7 @@ a:hover {
 blockquote {
   border-color: #6592e6;
 }
+
 /* Forms */
 .jq-selectbox li:hover,
 .jq-selectbox li.selected {
@@ -687,6 +702,33 @@ a {
 
 
 /*X-zero*/
+/*
+6592e6
+2260d2
+*/
+.X-zero .btn-primary,
+.X-zero .btn-primary:active {
+  background-color: #e2d4ea !important;
+  border-color: #e2d4ea !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.X-zero .btn-primary:hover,
+.X-zero .btn-primary:focus,
+.X-zero .btn-primary.focus,
+.X-zero .btn-primary.active {
+  color: #ffffff !important;
+  background-color: #8b5cac !important;
+  border-color: #8b5cac !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.X-zero .btn-primary.disabled,
+.X-zero .btn-primary:disabled {
+  color: #ffffff !important;
+  background-color: #8b5cac !important;
+  border-color: #8b5cac !important;
+}
+
 .X-zero .navbar-dropdown {
   position: relative !important;
 }
@@ -879,12 +921,8 @@ a {
   .X-zero .navbar .navbar-toggler {
     flex-basis: auto;
   }
-  .X-zero .navbar .icons-menu {
-    padding-left: 0;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
 }
+
 .X-zero .navbar.navbar-short {
   min-height: 60px;
 }
@@ -1014,8 +1052,6 @@ a {
   padding-top: 0.3rem;
   text-align: center;
 }
-
-
 
 
 
