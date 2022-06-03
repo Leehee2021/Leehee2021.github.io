@@ -11,16 +11,55 @@
 }
 */
 
-.X-two .mbr-section-head {
-  padding-top: 5rem;
-  padding-bottom: 7rem;
-}
-
 
 .X-Presents {
   padding-top: 3rem;
   padding-bottom: 5rem;
 }
+
+
+
+
+.X-Date {
+  padding: 50px 0 130px;
+}
+.X-Date .row {
+  padding-top: 2rem;
+}
+.X-Date .row h4 {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+.X-Date .service-block {
+  background: rgba(255, 255, 255, 0.5);
+}
+.X-Date .service-block.color-bg {
+  background: #cf74ff;
+  color: #fff;
+}
+
+.X-Date .service-block.color-bg i, .X-Date .service-block.color-bg h3, .X-Date .service-block.color-bg p {
+  color: #fff;
+}
+
+.X-Date .service-block h3 {
+  color: #333;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.X-Date .service-block p {
+  font-size: 20px;
+  color: #333;
+  line-height: 30px;
+}
+
+
 
 
 .X-Ceremony {
@@ -63,3 +102,79 @@
 rgb(255,223,246)
 #379683;
 */
+
+.X-Contact {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+.X-Contact .image-wrapper{
+  padding-top: 2rem;
+}
+.X-Contact .contact-form{
+  padding-top: 5rem;
+  text-align: right;
+}
+
+
+.contact-form .form-control {
+  border: 1px solid #fff;
+  box-shadow: none;
+  height: 45px !important;
+  color: #0c0c0c;
+  height: 38px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  border-radius: 0;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form #contact-submit:hover {
+  border-color: #fff;
+}
+
+.contact-form #contact-submit {
+  border: none;
+  padding: 15px 0;
+  width: 100%;
+  margin: 0;
+  background: #ff5aff ;
+  color: #fff;
+  border-radius: 0;
+}
+
+.contact-form textarea.form-control {
+  padding: 10px;
+  height: 120px !important;
+  outline: none;
+}
+
+.contact-details .contact-short-info {
+  margin-top: 15px;
+}
+
+.contact-details .contact-short-info li {
+  margin-bottom: 6px;
+}
+
+
+.error {
+  padding: 10px;
+  color: #D8000C;
+  border-radius: 2px;
+  font-size: 14px;
+  background-color: #FFBABA;
+}
+
+.success {
+  background-color: #6cb670;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+}
+
+#error, #success {
+  display: none;
+  margin-bottom: 10px;
+}

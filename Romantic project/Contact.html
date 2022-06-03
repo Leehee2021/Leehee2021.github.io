@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
     <link rel="shortcut icon" href="images/logo.png">
 
-    <title>Ceremony</title>
+    <title>Contact me</title>
 
 
     <!-- 导航基础配置  -->
@@ -75,23 +75,70 @@
       </nav>
   </section>
 
-    <!-- Ceremony -->
-  <section data-bs-version="5.1" class="X-Ceremony">
+  <!-- Contact me
 
+  <div class="contact-details col-md-6" >
+    <h3>Contact Details</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero, provident, eum eligendi blanditiis ex explicabo vitae nostrum facilis asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore adipisci.</p>
 
-      <div class="container">
-        <div class="mbr-section-head">
-          <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2" >
-            <strong>Cultivate a sense of ceremony</strong></h4>
-        </div>
-        <iframe class="airtable-embed"
-        src="https://airtable.com/embed/shr5JOqeGBBP0hfCr?backgroundColor=blueLight&viewControls=on"
-        frameborder="0" onmousewheel="" width="100%" height="533" style="background: rgb(184, 148, 219);
-        border: 1px solid #ccc;">
-        </iframe>
+  </div>
+-->
+<section data-bs-version="5.1" class="X-Contact">
+
+    <div class="container">
+      <div class="mbr-section-head">
+        <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2" >
+          <strong>Contact me</strong></h4>
       </div>
-  </section>
 
+      <div class="border">
+      </div>
+
+      <div class="row">
+          <!-- Contact Details -->
+          <div class="col-12 col-lg-6">
+              <div class="image-wrapper">
+                  <img src="images/me.png" alt="Me">
+              </div>
+          </div>
+
+
+          <!-- Contact Form -->
+          <div class="contact-form col-md-6 " >
+            <form id="contact-form" method="post" role="form">
+              <div class="form-group">
+                <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+              </div>
+
+              <div class="form-group">
+                <input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+              </div>
+
+              <div class="form-group">
+                <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+              </div>
+
+              <div class="form-group">
+                <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>
+              </div>
+
+              <div id="success" class="success">
+                Thank you. The Mailman is on His Way :)
+              </div>
+
+              <div id="error" class="error">
+                Sorry, don't know what happened. Try later :(
+              </div>
+
+              <div id="cf-submit">
+                <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+              </div>
+
+            </form>
+          </div>
+      </div>
+    </div>
+</section>
 
 
 <!-- footer -->
@@ -212,6 +259,7 @@
 
     <!-- 国内 Staticfile CDN 上的 Bootstrap5 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+    <script src="contact.js"></script>
 
   </body>
 </html>
