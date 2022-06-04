@@ -84,11 +84,23 @@
           <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2" >
             <strong>Cultivate a sense of ceremony</strong></h4>
         </div>
+
+        <div class="wrapper">
+          <h1 class="section-title mbr-fonts-style align-center mb-0 display-2">Who could do better than surprise!</h1>
+           <!--实时显示系统时间标签-->
+             <h6 id="data" align="right"></h6>
+             <ul class="box"></ul>
+             <button class="start">Start</button>
+             <button class="stop">Stop</button>
+         </div>
+
+<!-- Ceremony
         <iframe class="airtable-embed"
         src="https://airtable.com/embed/shr5JOqeGBBP0hfCr?backgroundColor=blueLight&viewControls=on"
         frameborder="0" onmousewheel="" width="100%" height="533" style="background: rgb(184, 148, 219);
         border: 1px solid #ccc;">
         </iframe>
+-->
       </div>
   </section>
 
@@ -212,6 +224,57 @@
 
     <!-- 国内 Staticfile CDN 上的 Bootstrap5 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+    <script>
+        //定义全局变量方便引用
+        var boxUl = document.getElementsByClassName('box')[0];
+        var start = document.getElementsByClassName('start')[0];
+        var stop = document.getElementsByClassName('stop')[0]
+        var oLi = document.getElementsByTagName('li');
 
+        //数据准备
+        var nameString = new String("Kissing on the street together,Running wildly in the rain,Brushing teeth and looking in the mirror together,Making fun of each other,Wearing couple outfits together,Walking hand in hand,Support each other in sports teams,Watching the sunset together,Watching the sunrise together on the top of the mountain in the early morning,Go to the library to read together,Spend a quiet afternoon together,Go shopping together,Watch the moon and count the stars together,Stay at home together playing games and watching dramas together ,Play like a child,Make a wish to a meteor together,Raise a puppy or kitten together and give it a cute name,Go to the supermarket to buy food and cook together,Watch a movie together,Take a photo together wearing the other’s type of clothes,Go on a trip together ,Eat hot pot together,Share photos of each other in the circle of friends and attach affectionate confessions,Go hiking together,Go to the amusemenetpark together for a whole day,Go to a concert of idols together,Hold hands together taking a walk after dinner ,Go to the haunted house together,Go diving together,Go to the beach together,Set off fireworks together,Wash clothes together");
+        var nameArr = nameString.split(",");
+
+        //获取每个XX添加到标签中，自动解析html标签
+        var str = "";
+        for (let i = 0; i < nameArr.length; i++) {
+            str += "<li >" + nameArr[i] + "</li>"
+        }
+        boxUl.innerHTML = str;
+
+        //添加开始按钮的点击事件
+        var timer = null;
+        start.onclick = function () {
+            // 设置定时器
+            timer = setInterval(function () {
+
+                // 根据数组长度范围生成随机数
+                var i = Math.floor(Math.random() * nameArr.length);
+                // 先通过for循环清空所有style属性
+                for (var j = 0; j < oLi.length; j++) {
+                    oLi[j].removeAttribute("style");
+                }
+                // 为随机选择的li颜色属性
+                oLi[i].style.background = "#ff98ff";
+            }, 150);
+        };
+        // 点击停止
+        stop.onclick = function () {
+            // 清空定时器停止点名
+            clearInterval(timer);
+        }
+        //页面初始化时间设置
+        window.onload = function () {
+            datatime();
+        }
+        //页面时间动态刷新
+        setInterval(datatime, 1000);
+
+        function datatime() {
+            let data = new Date();
+            let dataString ="Right now is peking time：" + data.toLocaleString();
+            document.getElementById("data").innerHTML = dataString;
+        }
+    </script>
   </body>
 </html>

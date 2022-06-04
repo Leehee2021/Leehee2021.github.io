@@ -782,10 +782,11 @@ background-color: rgba(204,200,255,0.6);
   width:60px;
   height:65px;
   background-color: rgba(204,200,255,0.2);
+  box-shadow: 2px 2px 5px #656B79;
   border-right: 10px;
   position: fixed;
-  right:10px;
-  bottom:40px;
+  right:15px;
+  bottom:35px;
   z-index: 1000;
 
 }
